@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding">16sp</dimen>
+    <dimen name="padding_card_radius">8sp</dimen>
+    <dimen name="padding_card_elevation">8sp</dimen>
+    <dimen name="edit_text">20sp</dimen>
+    <dimen name="layout_margin_p">8sp</dimen>
+
+    <dimen name="layout_half_padding">8dp</dimen>
+    <dimen name="layout_padding">16dp</dimen>
+    <dimen name="layout_extra_padding">32dp</dimen>
+
+</resources>

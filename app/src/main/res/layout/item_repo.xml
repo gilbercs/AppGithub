@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="@dimen/padding_card_radius"
+    app:cardElevation="@dimen/padding_card_elevation"
+    app:cardUseCompatPadding="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/id_icon_perfil"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:srcCompat="@tools:sample/avatars"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/id_tv_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_margin_p"
+            android:layout_marginEnd="@dimen/layout_margin_p"
+            android:layout_marginTop="@dimen/layout_margin_p"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/id_icon_perfil"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@sample/repositories.json/data/name" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/id_tv_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_margin_p"
+            android:layout_marginEnd="@dimen/layout_margin_p"
+            android:maxLines="2"
+            android:ellipsize="end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/id_icon_perfil"
+            app:layout_constraintTop_toBottomOf="@id/id_tv_user"
+            tools:text="@sample/repositories.json/data/description" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/id_chip_star"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            app:chipBackgroundColor="@color/white"
+            app:chipIcon="@drawable/ic_grade_24"
+            app:chipIconTint="#FAFA02"
+            app:layout_constraintStart_toStartOf="@id/id_tv_user"
+            app:layout_constraintTop_toBottomOf="@id/id_tv_description"
+            tools:text="@sample/repositories.json/data/stargazers_count" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/id_tv_repo_language"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            app:layout_constraintEnd_toEndOf="@id/id_tv_user"
+            app:layout_constraintTop_toTopOf="@id/id_chip_star"
+            tools:text="@sample/repositories.json/data/language" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
