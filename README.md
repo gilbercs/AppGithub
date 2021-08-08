@@ -1,2 +1,5 @@
 # github
-BootCamp Inter
+BootCamp Inter.
+
+JSON from GitHub.
+Android Retrofit2 and Glide Example 
